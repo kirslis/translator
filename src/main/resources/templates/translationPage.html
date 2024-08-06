@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>translation</title>
+    <style>
+        .page {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container {
+            border: 2px solid black;
+            position: fixed;
+            padding: 20px;
+            top: 20%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: #8b8b8b;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+<header>translation</header>
+<div class="container mt-5 mb-5">
+    <form method="post">
+        <div class="item">
+        <textarea name="textToTranslate" placeholder="input text to translate" th:text="${translation.originalText}"
+                  class="form-control"
+        ></textarea>
+        </div>
+        <div class="item">
+            <input type="text" name="originalLanguage" placeholder="input original language"
+                   th:value="${translation.originalLanguage}" th:text="${originalLanguageErrorMassage}"
+                   class="form-control"/>
+        </div>
+        <div class="item">
+            <input type="text" name="languageToTranslate" placeholder="input language to translate"
+                   th:value="${translation.languageToTranslate}" th:text="${languageToTranslateErrorMassage}"
+                   class="form-control"/>
+        </div>
+        <div class="item">
+            <button type="submit" class="btn btn-success">translate</button>
+
+        </div>
+        <div class="item">
+        <textarea name="translatedText" placeholder="translated text" th:text="${translation.translatedText}"
+                  class="form-control"
+        ></textarea>
+        </div>
+    </form>
+</div>
+</body>
+</html>
