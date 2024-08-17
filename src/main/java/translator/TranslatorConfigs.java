@@ -12,7 +12,7 @@ import java.util.*;
 public class TranslatorConfigs {
     public static String yandexURL = "https://translate.api.cloud.yandex.net/translate/v2/";
     public static List<String> availableLanguages = new ArrayList<String>();
-    public static String yandexKey = "t1.9euelZqTl5DKzJnGyZWKkI7KmImUmO3rnpWaisyayY2SzpTMio7HjpLPmMzl8_dyBwFK-e8CJBon_N3z9zI2fkn57wIkGif8zef1656VmonKlMnLiZfKlc_JxpaWzZiR7_zF656VmonKlMnLiZfKlc_JxpaWzZiR.qkwg_KWH5Ox6oww6tzPmJOIApHcGkThcYA0CeVmmcAjJG_Esm4VbW1QTCI5VsZu_l1QGpRzVf29sjvY214VRCQ";
+    public static String yandexKey = "t1.9euelZrHl8-Ji4vHmsaQlcuKysyXx-3rnpWaisyayY2SzpTMio7HjpLPmMzl8_cXOn5J-e8HHDV-_N3z91doe0n57wccNX78zef1656VmovIz5Wem43GmIycj5mRzImS7_zF656VmovIz5Wem43GmIycj5mRzImS.wOR1_ccVRW6CCZ8466uX4P4od0RwZ5mZ3lF9yPvbO6JQLnjsAe_u4nnxtaS80LEsbz3pWdOWADrxX5BcMfnJDQ";
     public static String folderId = "b1gh6pi76qpk5nbokd7o";
 
     private static List<String> getAllLanguagesFromText(String text) {
